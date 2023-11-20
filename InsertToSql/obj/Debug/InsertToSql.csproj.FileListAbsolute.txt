@@ -1,0 +1,10 @@
+D:\InsertToSql\InsertToSql\bin\Debug\InsertToSql.exe.config
+D:\InsertToSql\InsertToSql\bin\Debug\InsertToSql.exe
+D:\InsertToSql\InsertToSql\bin\Debug\InsertToSql.pdb
+D:\InsertToSql\InsertToSql\obj\Debug\InsertToSql.csproj.AssemblyReference.cache
+D:\InsertToSql\InsertToSql\obj\Debug\InsertToSql.Form1.resources
+D:\InsertToSql\InsertToSql\obj\Debug\InsertToSql.Properties.Resources.resources
+D:\InsertToSql\InsertToSql\obj\Debug\InsertToSql.csproj.GenerateResource.cache
+D:\InsertToSql\InsertToSql\obj\Debug\InsertToSql.csproj.CoreCompileInputs.cache
+D:\InsertToSql\InsertToSql\obj\Debug\InsertToSql.exe
+D:\InsertToSql\InsertToSql\obj\Debug\InsertToSql.pdb
