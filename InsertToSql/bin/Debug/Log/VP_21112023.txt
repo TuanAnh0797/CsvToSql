@@ -1,6 +1,9 @@
-﻿11:06:16 21/11/2023: C:\Users\70P7970\Desktop\VP\test2\New Text Document1.csv: Index was out of range. Must be non-negative and less than the size of the collection.
-Parameter name: index
-11:06:26 21/11/2023: C:\Users\70P7970\Desktop\VP\test2\New Text Document1.csv: Index was out of range. Must be non-negative and less than the size of the collection.
-Parameter name: index
-11:06:36 21/11/2023: C:\Users\70P7970\Desktop\VP\test2\New Text Document1.csv: Index was out of range. Must be non-negative and less than the size of the collection.
-Parameter name: index
+﻿22:09:50 21/11/2023: C:\Users\PC\Desktop\test\New Text Document.csv: Cannot access destination table 'VP'.
+22:09:55 21/11/2023: C:\Users\PC\Desktop\test\New Text Document.csv: Cannot access destination table 'VP'.
+22:10:00 21/11/2023: C:\Users\PC\Desktop\test\New Text Document.csv: Cannot access destination table 'VP'.
+22:10:05 21/11/2023: C:\Users\PC\Desktop\test\New Text Document.csv: Cannot access destination table 'VP'.
+22:10:10 21/11/2023: C:\Users\PC\Desktop\test\New Text Document.csv: Cannot access destination table 'VP'.
+22:10:15 21/11/2023: C:\Users\PC\Desktop\test\New Text Document.csv: Cannot access destination table 'VP'.
+22:10:20 21/11/2023: C:\Users\PC\Desktop\test\New Text Document.csv: Cannot access destination table 'VP'.
+22:10:25 21/11/2023: C:\Users\PC\Desktop\test\New Text Document.csv: Cannot access destination table 'VP'.
+22:10:30 21/11/2023: C:\Users\PC\Desktop\test\New Text Document.csv: Cannot access destination table 'VP'.

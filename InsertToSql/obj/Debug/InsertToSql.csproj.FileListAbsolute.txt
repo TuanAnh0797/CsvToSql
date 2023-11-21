@@ -34,3 +34,17 @@ C:\Users\70P7970\Desktop\InsertToSql\CsvToSql\InsertToSql\obj\Debug\InsertToSql.
 C:\Users\70P7970\Desktop\InsertToSql\CsvToSql\InsertToSql\obj\Debug\InsertToSql.csproj.GenerateResource.Cache
 C:\Users\70P7970\Desktop\InsertToSql\CsvToSql\InsertToSql\obj\Debug\InsertToSql.exe
 C:\Users\70P7970\Desktop\InsertToSql\CsvToSql\InsertToSql\obj\Debug\InsertToSql.pdb
+C:\Users\PC\Desktop\CsvToSql\InsertToSql\bin\Debug\config.json
+C:\Users\PC\Desktop\CsvToSql\InsertToSql\bin\Debug\InsertToSql.exe.config
+C:\Users\PC\Desktop\CsvToSql\InsertToSql\bin\Debug\InsertToSql.exe
+C:\Users\PC\Desktop\CsvToSql\InsertToSql\bin\Debug\InsertToSql.pdb
+C:\Users\PC\Desktop\CsvToSql\InsertToSql\bin\Debug\Newtonsoft.Json.dll
+C:\Users\PC\Desktop\CsvToSql\InsertToSql\bin\Debug\Newtonsoft.Json.xml
+C:\Users\PC\Desktop\CsvToSql\InsertToSql\obj\Debug\InsertToSql.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\CsvToSql\InsertToSql\obj\Debug\InsertToSql.Form1.resources
+C:\Users\PC\Desktop\CsvToSql\InsertToSql\obj\Debug\InsertToSql.Properties.Resources.resources
+C:\Users\PC\Desktop\CsvToSql\InsertToSql\obj\Debug\InsertToSql.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\CsvToSql\InsertToSql\obj\Debug\InsertToSql.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\CsvToSql\InsertToSql\obj\Debug\InsertToSql.csproj.CopyComplete
+C:\Users\PC\Desktop\CsvToSql\InsertToSql\obj\Debug\InsertToSql.exe
+C:\Users\PC\Desktop\CsvToSql\InsertToSql\obj\Debug\InsertToSql.pdb

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
@@ -68,25 +69,25 @@ namespace InsertToSql
         public void InnitWatchFile()
         {
             //1.VP
-            Time_VP.Start();
+            //Time_VP.Start();
             //2.GAS
-            Timer_GAS.Start();
+            //Timer_GAS.Start();
             //3.WI1WITH
-            Timer_WI1WITH.Start();
+            //Timer_WI1WITH.Start();
             //4.WITH1START
-            Timer_WI1START.Start();
+           // Timer_WI1START.Start();
             //5.IP
-            Timer_IP.Start();
+            //Timer_IP.Start();
             //6.DF
-            Timer_DF.Start();
+           // Timer_DF.Start();
             //7.TEMP
 
             //8.IOT
 
             //9.WI2
-            Timer_WI2.Start();
+            //Timer_WI2.Start();
             //10.PAN
-            Timer_PAN.Start();
+            //Timer_PAN.Start();
             //11.CAMBACK
 
             //12.CAMFRONT
@@ -124,7 +125,7 @@ namespace InsertToSql
                 {
                     for (int i = 0; i < skipline; i++)
                     {
-                        datacsv.RemoveAt(i);
+                        datacsv.RemoveAt(0);
                     }
                 }
             }
@@ -146,7 +147,23 @@ namespace InsertToSql
                     string[] datarow = datacsvrow.Split(',');
                     for (int i = 0; i < numbercolumn; i++)
                     {
-                        dr[i] = datarow[i].Trim();
+                        if (i == 0)
+                        {
+                            dr[i] = datarow[i].Replace('/','-').Trim();
+                        }
+                        else if (i == 1 && datarow[i].Length > 19)
+                        {
+                            dr[i] = datarow[i].Substring(0,19);
+                        }
+                        else if (i == 2 && datarow[i].Length > 2)
+                        {
+                            dr[i] = datarow[i].Substring(0, 2);
+                        }
+                        else
+                        {
+                            dr[i] = datarow[i].Trim();
+                        }
+                       
                     }
                     dt.Rows.Add(dr);
                 }
@@ -180,7 +197,7 @@ namespace InsertToSql
             }
         }
 
-        public async Task GetAllFile(string pathfolder, string HistoryFoler, string FileLog)
+        public async Task GetAllFile(string pathfolder,string nametable, string HistoryFoler, string FileLog)
         {
             try
             {
@@ -190,17 +207,17 @@ namespace InsertToSql
                     {
                         try
                         {
-                            List<string> datacsv = ReadFile(filePath, 1);
+                            List<string> datacsv = ReadFile(filePath, 3);
                             DataTable data = ConvertListToDatatable(datacsv);
-                            //SaveSql("", data);
+                            SaveSql(nametable, data);
                             CoppyFile(HistoryFoler, filePath, Path.GetFileName(filePath));
                             File.Delete(filePath);
-                        }
+                }
                         catch (Exception ex)
-                        {
-                            SaveLog(currentdirec + $"\\Log\\{FileLog}", filePath +": "+ ex.Message);
-                        }
-                    }
+            {
+                SaveLog(currentdirec + $"\\Log\\{FileLog}", filePath + ": " + ex.Message);
+            }
+        }
                 });
             }
             catch (Exception ex)
@@ -215,7 +232,7 @@ namespace InsertToSql
             {
                 is_VP_run = true;
                 string logfile = "VP_" + DateTime.Now.ToString("ddMMyyyy") + ".txt";
-                await GetAllFile(myconfig.WatchFolder.VP, currentdirec + "\\History\\" + myconfig.HistoryFolder.VP, logfile);
+                await GetAllFile(myconfig.WatchFolder.VP,myconfig.NameTable.VP, currentdirec + "\\History\\" + myconfig.HistoryFolder.VP, logfile);
                 is_VP_run = false;
             }
         }
@@ -225,8 +242,11 @@ namespace InsertToSql
             if (!is_GAS_run)
             {
                 is_GAS_run = true;
-                string logfile = "GAS_" + DateTime.Now.ToString("ddMMyyyy") + ".txt";
-                await GetAllFile(myconfig.WatchFolder.GAS, currentdirec + "\\History\\" + myconfig.HistoryFolder.GAS, logfile);
+                string logfilegas1 = "GAS1_" + DateTime.Now.ToString("ddMMyyyy") + ".txt";
+                string logfilegas2 = "GAS2_" + DateTime.Now.ToString("ddMMyyyy") + ".txt";
+                await GetAllFile(myconfig.WatchFolder.GAS1, myconfig.NameTable.GAS, currentdirec + "\\History\\" + myconfig.HistoryFolder.GAS1, logfilegas1);
+                await Task.Delay(500);
+                await GetAllFile(myconfig.WatchFolder.GAS2, myconfig.NameTable.GAS, currentdirec + "\\History\\" + myconfig.HistoryFolder.GAS2, logfilegas2);
                 is_GAS_run = false;
             }
         }
@@ -237,7 +257,7 @@ namespace InsertToSql
             {
                 is_WI1WITH_run = true;
                 string logfile = "WI1WITH_" + DateTime.Now.ToString("ddMMyyyy") + ".txt";
-                await GetAllFile(myconfig.WatchFolder.WI1WITH, currentdirec + "\\History\\" + myconfig.HistoryFolder.WI1WITH, logfile);
+                await GetAllFile(myconfig.WatchFolder.WI1WITH, myconfig.NameTable.WI1WITH, currentdirec + "\\History\\" + myconfig.HistoryFolder.WI1WITH, logfile);
                 is_WI1WITH_run = false;
             }
         }
@@ -248,7 +268,7 @@ namespace InsertToSql
             {
                 is_WI1START_run = true;
                 string logfile = "WI1START_" + DateTime.Now.ToString("ddMMyyyy") + ".txt";
-                await GetAllFile(myconfig.WatchFolder.WI1START, currentdirec + "\\History\\" + myconfig.HistoryFolder.WI1START, logfile);
+                await GetAllFile(myconfig.WatchFolder.WI1START, myconfig.NameTable.WI1START, currentdirec + "\\History\\" + myconfig.HistoryFolder.WI1START, logfile);
                 is_WI1START_run = false;
             }
         }
@@ -259,7 +279,7 @@ namespace InsertToSql
             {
                 is_IP_run = true;
                 string logfile = "IP_" + DateTime.Now.ToString("ddMMyyyy") + ".txt";
-                await GetAllFile(myconfig.WatchFolder.IP, currentdirec + "\\History\\" + myconfig.HistoryFolder.IP, logfile);
+                await GetAllFile(myconfig.WatchFolder.IP, myconfig.NameTable.IP, currentdirec + "\\History\\" + myconfig.HistoryFolder.IP, logfile);
                 is_IP_run = false;
             }
         }
@@ -270,7 +290,7 @@ namespace InsertToSql
             {
                 is_DF_run = true;
                 string logfile = "DF_" + DateTime.Now.ToString("ddMMyyyy") + ".txt";
-                await GetAllFile(myconfig.WatchFolder.DF, currentdirec + "\\History\\" + myconfig.HistoryFolder.DF, logfile);
+                await GetAllFile(myconfig.WatchFolder.DF, myconfig.NameTable.DF, currentdirec + "\\History\\" + myconfig.HistoryFolder.DF, logfile);
                 is_DF_run = false;
             }
         }
@@ -281,7 +301,7 @@ namespace InsertToSql
             {
                 is_WI2_run = true;
                 string logfile = "WI2_" + DateTime.Now.ToString("ddMMyyyy") + ".txt";
-                await GetAllFile(myconfig.WatchFolder.WI2, currentdirec + "\\History\\" + myconfig.HistoryFolder.WI2, logfile);
+                await GetAllFile(myconfig.WatchFolder.WI2, myconfig.NameTable.WI2, currentdirec + "\\History\\" + myconfig.HistoryFolder.WI2, logfile);
                 is_WI2_run = false;
             }
         }
@@ -292,9 +312,56 @@ namespace InsertToSql
             {
                 is_PAN_run = true;
                 string logfile = "PAN_" + DateTime.Now.ToString("ddMMyyyy") + ".txt";
-                await GetAllFile(myconfig.WatchFolder.PAN, currentdirec + "\\History\\" + myconfig.HistoryFolder.PAN, logfile);
+                await GetAllFile(myconfig.WatchFolder.PAN, myconfig.NameTable.PAN, currentdirec + "\\History\\" + myconfig.HistoryFolder.PAN, logfile);
                 is_PAN_run = false;
             }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn chắc chắn muốn tắt chương trình?","Thông báo",MessageBoxButtons.YesNo,MessageBoxIcon.Question,MessageBoxDefaultButton.Button2)== DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+           
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //1.VP
+            Time_VP.Stop();
+            //2.GAS
+            Timer_GAS.Stop();
+            //3.WI1WITH
+            Timer_WI1WITH.Stop();
+            //4.WITH1START
+             Timer_WI1START.Stop();
+            //5.IP
+            Timer_IP.Stop();
+            //6.DF
+             Timer_DF.Stop();
+            //7.TEMP
+
+            //8.IOT
+
+            //9.WI2
+            Timer_WI2.Stop();
+            //10.PAN
+            Timer_PAN.Stop();
+            //11.CAMBACK
+
+            //12.CAMFRONT
+
+        }
+
+        private void btn_log_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", currentdirec + "\\Log");
+        }
+
+        private void btn_his_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", currentdirec + "\\History");
         }
     }
 }
