@@ -22,3 +22,15 @@ C:\Users\PC\Desktop\New folder (4)\CsvToSql\InsertToSql\obj\Debug\InsertToSql.cs
 C:\Users\PC\Desktop\New folder (4)\CsvToSql\InsertToSql\obj\Debug\InsertToSql.exe
 C:\Users\PC\Desktop\New folder (4)\CsvToSql\InsertToSql\obj\Debug\InsertToSql.pdb
 C:\Users\PC\Desktop\New folder (4)\CsvToSql\InsertToSql\bin\Debug\config.json
+C:\Users\70P7970\Desktop\InsertToSql\CsvToSql\InsertToSql\bin\Debug\config.json
+C:\Users\70P7970\Desktop\InsertToSql\CsvToSql\InsertToSql\bin\Debug\InsertToSql.exe.config
+C:\Users\70P7970\Desktop\InsertToSql\CsvToSql\InsertToSql\bin\Debug\InsertToSql.exe
+C:\Users\70P7970\Desktop\InsertToSql\CsvToSql\InsertToSql\bin\Debug\InsertToSql.pdb
+C:\Users\70P7970\Desktop\InsertToSql\CsvToSql\InsertToSql\bin\Debug\Newtonsoft.Json.dll
+C:\Users\70P7970\Desktop\InsertToSql\CsvToSql\InsertToSql\bin\Debug\Newtonsoft.Json.xml
+C:\Users\70P7970\Desktop\InsertToSql\CsvToSql\InsertToSql\obj\Debug\InsertToSql.csprojResolveAssemblyReference.cache
+C:\Users\70P7970\Desktop\InsertToSql\CsvToSql\InsertToSql\obj\Debug\InsertToSql.Form1.resources
+C:\Users\70P7970\Desktop\InsertToSql\CsvToSql\InsertToSql\obj\Debug\InsertToSql.Properties.Resources.resources
+C:\Users\70P7970\Desktop\InsertToSql\CsvToSql\InsertToSql\obj\Debug\InsertToSql.csproj.GenerateResource.Cache
+C:\Users\70P7970\Desktop\InsertToSql\CsvToSql\InsertToSql\obj\Debug\InsertToSql.exe
+C:\Users\70P7970\Desktop\InsertToSql\CsvToSql\InsertToSql\obj\Debug\InsertToSql.pdb

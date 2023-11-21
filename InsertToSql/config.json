@@ -1,7 +1,7 @@
 ﻿{
   "ConnectionString": "Data Source=DESKTOP-NP52VJJ\\SQLEXPRESS;Initial Catalog=model;User ID=sa;PassWord=123456",
   "WatchFolder": {
-    "VP": "C:\\Users\\PC\\Desktop\\test",
+    "VP": "C:\\Users\\70P7970\\Desktop\\VP",
     "GAS": "2",
     "WI1WITH": "3",
     "WI1START": "4",
@@ -9,8 +9,23 @@
     "DF": "6",
     "TEMP": "7",
     "IOT": "8",
+    "WI2": "8",
     "PAN": "9",
     "CAMBACK": "10",
     "CAMFRONT": "11"
+  },
+  "HistoryFolder": {
+    "VP": "VP",
+    "GAS": "GAS",
+    "WI1WITH": "WI1WITH",
+    "WI1START": "WI1START",
+    "IP": "IP",
+    "DF": "DF",
+    "TEMP": "TEMP",
+    "IOT": "IOT",
+    "WI2": "WI2",
+    "PAN": "PAN",
+    "CAMBACK": "CAMBACK",
+    "CAMFRONT": "CAMFRONT"
   }
 }
