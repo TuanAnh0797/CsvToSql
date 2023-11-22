@@ -1,5 +1,6 @@
 ﻿{
   "ConnectionString": "Data Source=DESKTOP-NP52VJJ\\SQLEXPRESS;Initial Catalog=managermentbarcode;User ID=sa;PassWord=123456",
+  "StartCheck": "STOP",
   "NameTable": {
     "VP": "VP",
     "GAS": "GAS",
@@ -13,6 +14,20 @@
     "PAN": "PAN",
     "CAMBACK": "CAMBACK",
     "CAMFRONT": "CAMFRONT"
+  },
+  "QuantityColumn": {
+    "VP": 1,
+    "GAS": 2,
+    "WI1WITH": 1,
+    "WI1START": 1,
+    "IP": 1,
+    "DF": 1,
+    "TEMP": 1,
+    "IOT": 1,
+    "WI2": 1,
+    "PAN": 1,
+    "CAMBACK": 1,
+    "CAMFRONT": 1
   },
   "WatchFolder": {
     "VP": "D:\\DataPLC\\H_LOGVP",
@@ -44,4 +59,5 @@
     "CAMBACK": "CAMBACK",
     "CAMFRONT": "CAMFRONT"
   }
+
 }

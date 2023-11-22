@@ -9,10 +9,12 @@ namespace InsertToSql
     internal class Config
     {
         //Data Source=DESKTOP-CEVMTEM\SQLEXPRESS;Initial Catalog=DataQCCheck;User ID=sa;Password=123@123a
-        public string ConnectionString { get; set; }
+            public string ConnectionString { get; set; }
+            public string StartCheck { get; set; }
             public Watch_Folder WatchFolder { get; set; }
             public History_Folder HistoryFolder { get; set; }
             public Name_Table NameTable { get; set; }
+            public Quantity_Column QuantityColumn { get; set; }
 
 
         public class Watch_Folder
@@ -61,6 +63,21 @@ namespace InsertToSql
             public string PAN { get; set; }
             public string CAMBACK { get; set; }
             public string CAMFRONT { get; set; }
+        }
+        public class Quantity_Column
+        {
+            public int VP { get; set; }
+            public int GAS { get; set; }
+            public int WI1WITH { get; set; }
+            public int WI1START { get; set; }
+            public int IP { get; set; }
+            public int DF { get; set; }
+            public int TEMP { get; set; }
+            public int IOT { get; set; }
+            public int WI2 { get; set; }
+            public int PAN { get; set; }
+            public int CAMBACK { get; set; }
+            public int CAMFRONT { get; set; }
         }
 
 
