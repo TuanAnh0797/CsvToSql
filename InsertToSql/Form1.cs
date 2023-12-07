@@ -156,7 +156,7 @@ namespace InsertToSql
                         {
                             for (int i = 0; i < numbercolumn - datarow.Count; i++)
                             {
-                                datarow.Add("");
+                                datarow.Add(" ");
                             }
                         }
                         for (int i = 0; i < numbercolumn; i++)

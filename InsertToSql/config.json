@@ -1,6 +1,6 @@
 ﻿{
-  "ConnectionString": "Data Source=DESKTOP-NP52VJJ\\SQLEXPRESS;Initial Catalog=managermentbarcode;User ID=sa;PassWord=123456",
-  "StartCheck": "STOP",
+  "ConnectionString": "Data Source=DESKTOP-CEVMTEM\\SQLEXPRESS;Initial Catalog=DataPLC;User ID=sa;Password=123@123a",
+  "StartCheck": "START",
   "NameTable": {
     "VP": "VP",
     "GAS": "GAS",
@@ -16,8 +16,8 @@
     "CAMFRONT": "CAMFRONT"
   },
   "QuantityColumn": {
-    "VP": 5,
-    "GAS": 11,
+    "VP": 6,
+    "GAS": 14,
     "WI1WITH": 9,
     "WI1START": 7,
     "IP": 10,

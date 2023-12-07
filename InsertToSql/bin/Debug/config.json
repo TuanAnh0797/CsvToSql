@@ -1,6 +1,6 @@
 ﻿{
-  "ConnectionString": "Data Source=DESKTOP-NP52VJJ\\SQLEXPRESS;Initial Catalog=managermentbarcode;User ID=sa;PassWord=123456",
-  "StartCheck": "STOP",
+  "ConnectionString": "Data Source=DESKTOP-CEVMTEM\\SQLEXPRESS;Initial Catalog=DataPLC;User ID=sa;Password=123@123a",
+  "StartCheck": "START",
   "NameTable": {
     "VP": "VP",
     "GAS": "GAS",
@@ -16,18 +16,18 @@
     "CAMFRONT": "CAMFRONT"
   },
   "QuantityColumn": {
-    "VP": 1,
-    "GAS": 2,
-    "WI1WITH": 1,
-    "WI1START": 1,
-    "IP": 1,
-    "DF": 1,
-    "TEMP": 1,
-    "IOT": 1,
-    "WI2": 1,
-    "PAN": 1,
-    "CAMBACK": 1,
-    "CAMFRONT": 1
+    "VP": 6,
+    "GAS": 14,
+    "WI1WITH": 9,
+    "WI1START": 7,
+    "IP": 10,
+    "DF": 10,
+    "TEMP": 0,
+    "IOT": 15,
+    "WI2": 10,
+    "PAN": 7,
+    "CAMBACK": 0,
+    "CAMFRONT": 0
   },
   "WatchFolder": {
     "VP": "D:\\DataPLC\\H_LOGVP",
@@ -37,12 +37,12 @@
     "WI1START": "D:\\DataPLC\\H_LOGWI1(Starting)",
     "IP": "D:\\DataPLC\\H_LOGIP",
     "DF": "D:\\DataPLC\\H_LOGDF",
-    "TEMP": "7",
-    "IOT": "8",
+    "TEMP": "*",
+    "IOT": "*",
     "WI2": "D:\\DataPLC\\H_LOGWI2",
     "PAN": "D:\\DataPLC\\H_LOGPAN",
-    "CAMBACK": "10",
-    "CAMFRONT": "11"
+    "CAMBACK": "*",
+    "CAMFRONT": "*"
   },
   "HistoryFolder": {
     "VP": "VP",

@@ -60,3 +60,17 @@ C:\Users\70P7970\Desktop\CsvToSql\InsertToSql\obj\Debug\InsertToSql.Properties.R
 C:\Users\70P7970\Desktop\CsvToSql\InsertToSql\obj\Debug\InsertToSql.csproj.GenerateResource.Cache
 C:\Users\70P7970\Desktop\CsvToSql\InsertToSql\obj\Debug\InsertToSql.exe
 C:\Users\70P7970\Desktop\CsvToSql\InsertToSql\obj\Debug\InsertToSql.pdb
+C:\Users\Admin\Desktop\New folder\CsvToSql\InsertToSql\bin\Debug\config.json
+C:\Users\Admin\Desktop\New folder\CsvToSql\InsertToSql\bin\Debug\InsertToSql.exe.config
+C:\Users\Admin\Desktop\New folder\CsvToSql\InsertToSql\bin\Debug\InsertToSql.exe
+C:\Users\Admin\Desktop\New folder\CsvToSql\InsertToSql\bin\Debug\InsertToSql.pdb
+C:\Users\Admin\Desktop\New folder\CsvToSql\InsertToSql\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\New folder\CsvToSql\InsertToSql\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\New folder\CsvToSql\InsertToSql\obj\Debug\InsertToSql.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\New folder\CsvToSql\InsertToSql\obj\Debug\InsertToSql.Form1.resources
+C:\Users\Admin\Desktop\New folder\CsvToSql\InsertToSql\obj\Debug\InsertToSql.Properties.Resources.resources
+C:\Users\Admin\Desktop\New folder\CsvToSql\InsertToSql\obj\Debug\InsertToSql.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\New folder\CsvToSql\InsertToSql\obj\Debug\InsertToSql.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\New folder\CsvToSql\InsertToSql\obj\Debug\InsertToSql.csproj.CopyComplete
+C:\Users\Admin\Desktop\New folder\CsvToSql\InsertToSql\obj\Debug\InsertToSql.exe
+C:\Users\Admin\Desktop\New folder\CsvToSql\InsertToSql\obj\Debug\InsertToSql.pdb
