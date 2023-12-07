@@ -84,6 +84,7 @@ namespace InsertToSql
                 Timer_DF.Start();
                 //7.TEMP
                 //8.IOT
+                Timer_IOT.Start();
                 //9.WI2
                 Timer_WI2.Start();
                 //10.PAN
@@ -449,6 +450,11 @@ namespace InsertToSql
         private void btn_his_Click(object sender, EventArgs e)
         {
             Process.Start("explorer.exe", currentdirec + "\\History");
+        }
+
+        private void Timer_IOT_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }

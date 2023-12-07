@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.fsw_CAMFRONT = new System.IO.FileSystemWatcher();
             this.Time_VP = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.Timer_GAS = new System.Windows.Forms.Timer(this.components);
@@ -40,8 +39,8 @@
             this.Timer_WI2 = new System.Windows.Forms.Timer(this.components);
             this.Timer_PAN = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.lbl_vp = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.btn_log = new System.Windows.Forms.Button();
             this.btn_his = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -65,7 +64,7 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.lbl_IP = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.fsw_CAMFRONT)).BeginInit();
+            this.Timer_IOT = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -75,13 +74,6 @@
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // fsw_CAMFRONT
-            // 
-            this.fsw_CAMFRONT.EnableRaisingEvents = true;
-            this.fsw_CAMFRONT.Filter = "*.csv*";
-            this.fsw_CAMFRONT.IncludeSubdirectories = true;
-            this.fsw_CAMFRONT.SynchronizingObject = this;
             // 
             // Time_VP
             // 
@@ -143,16 +135,6 @@
             this.panel1.Size = new System.Drawing.Size(308, 34);
             this.panel1.TabIndex = 1;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Công đoạn VP";
-            // 
             // lbl_vp
             // 
             this.lbl_vp.AutoSize = true;
@@ -162,6 +144,16 @@
             this.lbl_vp.Size = new System.Drawing.Size(128, 20);
             this.lbl_vp.TabIndex = 3;
             this.lbl_vp.Text = "Đang chờ dữ liệu";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Công đoạn VP";
             // 
             // btn_log
             // 
@@ -395,6 +387,11 @@
             this.label16.TabIndex = 2;
             this.label16.Text = "Công đoạn IP";
             // 
+            // Timer_IOT
+            // 
+            this.Timer_IOT.Interval = 5000;
+            this.Timer_IOT.Tick += new System.EventHandler(this.Timer_IOT_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -417,7 +414,6 @@
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.fsw_CAMFRONT)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -440,7 +436,6 @@
         }
 
         #endregion
-        private System.IO.FileSystemWatcher fsw_CAMFRONT;
         private System.Windows.Forms.Timer Time_VP;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer Timer_GAS;
@@ -476,6 +471,7 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label lbl_IP;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Timer Timer_IOT;
     }
 }
 
