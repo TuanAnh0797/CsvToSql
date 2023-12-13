@@ -1,5 +1,5 @@
 ﻿{
-  "ConnectionString": "Data Source=DESKTOP-CEVMTEM\\SQLEXPRESS;Initial Catalog=DataPLC;User ID=sa;Password=123@123a",
+  "ConnectionString": "Server=192.168.3.178;Port=3306;Database=dataplc;User=TA;Password=123456;AllowLoadLocalInfile=true;",
   "StartCheck": "START",
   "NameTable": {
     "VP": "VP",
@@ -16,18 +16,18 @@
     "CAMFRONT": "CAMFRONT"
   },
   "QuantityColumn": {
-    "VP": 6,
-    "GAS": 14,
-    "WI1WITH": 9,
-    "WI1START": 7,
-    "IP": 10,
-    "DF": 10,
+    "VP": 8,
+    "GAS": 16,
+    "WI1WITH": 11,
+    "WI1START": 9,
+    "IP": 12,
+    "DF": 12,
     "TEMP": 0,
-    "IOT": 15,
-    "WI2": 10,
-    "PAN": 7,
-    "CAMBACK": 0,
-    "CAMFRONT": 0
+    "IOT": 17,
+    "WI2": 12,
+    "PAN": 9,
+    "CAMBACK": 27,
+    "CAMFRONT": 26
   },
   "WatchFolder": {
     "VP": "D:\\DataPLC\\H_LOGVP",
@@ -41,8 +41,8 @@
     "IOT": "*",
     "WI2": "D:\\DataPLC\\H_LOGWI2",
     "PAN": "D:\\DataPLC\\H_LOGPAN",
-    "CAMBACK": "*",
-    "CAMFRONT": "*"
+    "CAMBACK": "\\\\192.168.3.248\\scada",
+    "CAMFRONT": "\\\\192.168.3.249\\scada"
   },
   "HistoryFolder": {
     "VP": "VP",
@@ -58,6 +58,26 @@
     "PAN": "PAN",
     "CAMBACK": "CAMBACK",
     "CAMFRONT": "CAMFRONT"
+  },
+  "ShareFile": {
+    "TEMP": {
+      "UserName": "",
+      "PassWord": ""
+    },
+    "IOT": {
+      "UserName": "",
+      "PassWord": ""
+    },
+    "CAMBACK": {
+      "UserName": "CAMBACK",
+      "PassWord": "123456"
+    },
+    "CAMFRONT": {
+      "UserName": "",
+      "PassWord": ""
+    }
   }
+
+
 
 }

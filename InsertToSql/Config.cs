@@ -15,8 +15,36 @@ namespace InsertToSql
             public History_Folder HistoryFolder { get; set; }
             public Name_Table NameTable { get; set; }
             public Quantity_Column QuantityColumn { get; set; }
+            public Share_File ShareFile { get; set; }    
 
+        public class Share_File
+        {
+            public TEMP TEMP { get; set; }
+            public IOT IOT { get; set; }
+            public CAMBACK CAMBACK { get; set; }
+            public CAMFRONT CAMFRONT { get; set; }
+        }
+        public class CAMBACK
+        {
+            public string UserName { get; set; }
+            public string PassWord { get; set; }
+        }
 
+        public class CAMFRONT
+        {
+            public string UserName { get; set; }
+            public string PassWord { get; set; }
+        }
+        public class IOT
+        {
+            public string UserName { get; set; }
+            public string PassWord { get; set; }
+        }
+        public class TEMP
+        {
+            public string UserName { get; set; }
+            public string PassWord { get; set; }
+        }
         public class Watch_Folder
         {
             public string VP { get; set; }
