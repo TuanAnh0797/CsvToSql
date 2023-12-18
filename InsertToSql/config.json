@@ -41,8 +41,8 @@
     "IOT": "*",
     "WI2": "D:\\DataPLC\\H_LOGWI2",
     "PAN": "D:\\DataPLC\\H_LOGPAN",
-    "CAMBACK": "\\\\192.168.3.248\\scada",
-    "CAMFRONT": "\\\\192.168.3.249\\scada"
+    "CAMBACK": "\\\\192.168.3.248\\LogOneByOne",
+    "CAMFRONT": "\\\\192.168.3.249\\LogOneByOne"
   },
   "HistoryFolder": {
     "VP": "VP",
